@@ -1,0 +1,117 @@
+﻿<Window x:Class="jewDCC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jewDCC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowState="Normal"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown"
+        materialDesign:ThemeAssist.Theme="Dark">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button
+            Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+            HorizontalAlignment="Left"
+            ToolTip="Close" Margin="750,10,0,400"
+            Background="#FF605C" Click="ExitButton">
+            <materialDesign:PackIcon
+                Kind="WindowClose"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <Button
+            Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+            HorizontalAlignment="Left"
+            ToolTip="Minimize" Margin="705,10,0,400"
+            Background="#FFBD44" Click="MinimizeButton">
+            <materialDesign:PackIcon
+                Kind="WindowMinimize"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <Button
+            Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+            HorizontalAlignment="Left"
+            ToolTip="About" Margin="10,10,0,400"
+            Background="#30ABFA" Click="AboutButton">
+            <materialDesign:PackIcon
+                Kind="About"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <Button
+            Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+            HorizontalAlignment="Left"
+            ToolTip="MaterialDesignFloatingActionMiniButton"
+            Click="Button_Click" Margin="457,199,0,224" Height="Auto" Width="28">
+            <materialDesign:PackIcon
+                Kind="StickerEmoji"
+                Height="18"
+                Width="18" />
+        </Button>
+
+        <TextBlock
+            Style="{StaticResource MaterialDesignHeadline2TextBlock}" Text="jewDCC" Margin="305,10,281,367"/>
+
+        <ComboBox
+            Name="TypeComboBox"
+            materialDesign:HintAssist.Hint="Connection Type"
+            materialDesign:TextFieldAssist.HasClearButton="True"
+            Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+            Margin="305,141,315,269" SelectionChanged="TypeComboBox_SelectionChanged">
+            <ComboBoxItem>
+                Skype
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Battle.Net
+            </ComboBoxItem>
+            <ComboBoxItem>
+                League Of Legends
+            </ComboBoxItem>
+        </ComboBox>
+
+        <TextBox
+            Name="NameField"
+            materialDesign:HintAssist.Hint="Connection Name"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" Margin="305,186,348,224" Height="40" TextChanged="NameField_TextChanged" />
+
+        <TextBox
+            Name="TokenField"
+            materialDesign:HintAssist.Hint="Token"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" Margin="305,231,315,179" Height="40" TextChanged="TokenField_TextChanged" />
+
+        <CheckBox
+            Name="SaveTokenCheckBox"
+            IsEnabled="False"
+            Style="{StaticResource MaterialDesignCheckBox}"
+            Margin="305,271,401,139"
+            Content="Save Token"/>
+
+        <Button
+            Name="AddConnectionButton"
+            IsEnabled="False"
+            Style="{StaticResource MaterialDesignRaisedButton}" Margin="305,332,315,69" Click="AddButton" Height="Auto">
+            Add Connection
+        </Button>
+    </Grid>
+</Window>
