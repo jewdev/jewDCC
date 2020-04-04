@@ -10,8 +10,9 @@ jewDCC - A program I made to add custom connections to Discord, Google-ish mater
 
 **jewDCC** © [jewdev](https://github.com/jewdev) Authored and maintained by jewdev.
 
-## Screenshot
+## Screenshots
 ![screenshot](https://i.imgur.com/8IZezp3.png)
+![screenshot](https://i.imgur.com/ND1jLOV.png)
 
 ## Special Thanks
 > Special thanks for my beta testers!
