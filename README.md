@@ -23,15 +23,19 @@ jewDCC - A program I made to add custom connections to Discord, Google-ish mater
 
    A: DCC stands for "Discord Custom Connections" in this context.
 
-2. Q: How can I report bugs?
+2. Q: How do I get a token?
+
+   A: You can see how to find your Discord token [here](https://discordhelp.net/discord-token).
+
+3. Q: How can I report bugs?
    
    A: Open new issue [here](https://github.com/jewdev/jewDCC/issues).
 
-3. Q: How can I contribute?
+4. Q: How can I contribute?
 
    A: If you know how to code, feel free to improve the program and open a pull request [here](https://github.com/jewdev/jewDCC/pulls), if you don't know how to code so just fork and star this repository!
    
-4. Q: Can you help me with the program?
+5. Q: Can you help me with the program?
 
    A: No.
 
