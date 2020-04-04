@@ -93,27 +93,14 @@ namespace jewDCC
                     dataStream.Write(byteArray, 0, byteArray.Length);
                     dataStream.Close();
 
-                    if (request.GetResponse().ToString()
-                        .Contains(
-                            "\"revoked\": false, \"visibility\": 1, \"friend_sync\": false, \"show_activity\": true"))
-                    {
-                        MessageBox.Show(
+                    MessageBox.Show(
                             $"Successfully added a connection!\nName: {NameField.Text}\nType: {TypeComboBox.Text}\n(P.S: If you want to remove it go to Settings > Connections and just remove it)",
                             "Success!",
                             MessageBoxButton.OK,
                             MessageBoxImage.Information);
 
-                        if ((bool)SaveTokenCheckBox.IsChecked)
-                            File.WriteAllText("token.txt", TokenField.Text);
-                    }
-                    else
-                    {
-                        MessageBox.Show(
-                            "Beep boop... Error!\nSomething is wrong but I can't figure what is it!",
-                            "Error!",
-                            MessageBoxButton.OK,
-                            MessageBoxImage.Information);
-                    }
+                    if ((bool)SaveTokenCheckBox.IsChecked)
+                        File.WriteAllText("token.txt", TokenField.Text);
                 }
                 catch (Exception exception)
                 {
