@@ -15,13 +15,12 @@ jewDCC - A program I made to add custom connections to Discord, Google-ish mater
 ![screenshot](https://i.imgur.com/ND1jLOV.png)
 
 ## Special Thanks
-> Special thanks for my beta testers!
-> > [Ryan Montgomery](https://github.com/ryanrohypnol) - I "improved" his own Discord Custom Connections repository in Python and I wanted to re-make in C#, and, here we are!
+> [Ryan Montgomery](https://github.com/ryanrohypnol) - I "improved" his own Discord Custom Connections repository in Python and I wanted to re-make in C#, and, here we are!
 
 ## FAQ
-1. Q: What the heck does DCC means?
+1. Q: What does DCC mean?
 
-   A: DCC stands for "Discord Custom Connections" in this context.
+   A: DCC stands for "Discord Custom Connections".
 
 2. Q: How do I get a token?
 
@@ -37,7 +36,7 @@ jewDCC - A program I made to add custom connections to Discord, Google-ish mater
    
 5. Q: Can you help me with the program?
 
-   A: No.
+   A: No, I'm not an Indian tech support.
 
 5. Q: Are you really a jew?
 
