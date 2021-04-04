@@ -1,3 +1,5 @@
+# CUSTOM CONNECTIONS ON DISCORD HAVE BEEN PATCHED! THIS REPO WILL BE ARCHIVED TILL FURTHER NOTICE.
+
 # jewDCC <img src="https://i.imgur.com/W2QSZeG.gif" align="right">
 
 jewDCC - A program I made to add custom connections to Discord, Google-ish material GUI and very good UX, trust me.
@@ -15,7 +17,7 @@ jewDCC - A program I made to add custom connections to Discord, Google-ish mater
 ![screenshot](https://i.imgur.com/ND1jLOV.png)
 
 ## Special Thanks
-> [Ryan Montgomery](https://github.com/ryanrohypnol) - I "improved" his own Discord Custom Connections repository in Python and I wanted to re-make in C#, and, here we are!
+> [Ryan Montgomery](https://github.com/0dayCTF) - I "improved" his own Discord Custom Connections repository in Python and I wanted to re-make in C#, and, here we are!
 
 ## FAQ
 1. Q: What does DCC mean?
